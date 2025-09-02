@@ -11,4 +11,5 @@ class AnimalsInZoo {
 	private:
 		int numAnimals = 0;
 		Animal animal;
+};
 	
