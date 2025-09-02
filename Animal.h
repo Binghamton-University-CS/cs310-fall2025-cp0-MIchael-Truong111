@@ -1,6 +1,8 @@
 #include <iostream>
 #include <stdlib.h>
 using namespace std;
+#ifndef ANIMAL_H
+#define ANIMAL_H
 
 
 
@@ -17,3 +19,4 @@ class Animal {
       unsigned int year_discovered = 0;
 };
 
+#endif

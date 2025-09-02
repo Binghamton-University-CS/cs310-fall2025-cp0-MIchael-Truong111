@@ -1,27 +1,36 @@
 #include <iostream>
 #include <stdlib.h>
 #include "AnimalsInZoo.h"
-#include "Animals.h"
+#include "Animal.h"
+using namespace std;
 
 
 AnimalsInZoo::AnimalsInZoo(int numAnimals, Animal animal) {
-	typeAnimal = animal;
 	numAnimals = numAnimals;
+	animal = animal;
 }
 
 
-void setAnimal(Animal animal) {
-	animal.numAnimals = 1;
+void AnimalsInZoo::setAnimal() {
+	AnimalsInZoo::numAnimals = 1;
+	
 }
-bool checkAnimals(Animal animal) {
-	if (animal.numAnimals = 1) {
+bool AnimalsInZoo::checkAnimal() {
+	if ((AnimalsInZoo::numAnimals = 1)) {
 		return true;
 	} else {
 		return false;
-void AnimalsInZoo::display() {
-	if (checkAnimals(Animal animal)) {
-		cout << numAnimals << Animal::display();
 	}
 }
+bool AnimalsInZoo::displayZoo() {
+	cout << "There is " << numAnimals << " in the zoo. Which is";
+	if (checkAnimal()) {
+		animal.display();
+		return true;
+	} else {
+		return false;
+	}
+}
+
 
 

@@ -16,10 +16,18 @@ int main() {
 	animal3.display();
 
 	delete animal1;
-	AnimalsInZoo zooAnimal(0, animal2);
-	AnimalsInZoo.setAnimal(zooAnimal);
-	zooAnimal.display();
 
+	Animal animal4("Kangaroo", 1790);
+//	AnimalsInZoo *zooAnimal = new AnimalsInZoo(0, animal2);
+	AnimalsInZoo zooAnimal(0, animal4);
+	zooAnimal.setAnimal();
+	zooAnimal.displayZoo();
+	animal4.display();
+	/*
+	if (zooAnimal->displayZoo()) {
+		zooAnimal->display();
+	}
+	*/
 	return 0;
   
 
