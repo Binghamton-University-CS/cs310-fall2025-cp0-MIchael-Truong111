@@ -1,6 +1,7 @@
 #include <iostream>
 #include <stdlib.h>
 #include "Animal.h"
+#include "AnimalsInZoo.h"
 using namespace std;
 
 int main() {
@@ -15,9 +16,11 @@ int main() {
 	animal3.display();
 
 	delete animal1;
-	AnimalsInZoo ZooAnimal(0, animal2);
-	setAnimal(ZooAnimal);
-	ZooAnimal.display();
+	AnimalsInZoo zooAnimal(0, animal2);
+	AnimalsInZoo.setAnimal(zooAnimal);
+	zooAnimal.display();
+
+	return 0;
   
 
 

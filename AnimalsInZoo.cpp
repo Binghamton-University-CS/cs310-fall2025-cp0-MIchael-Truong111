@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "AnimalsInZoo.h"
 #include "Animals.h"
-using namespace std;
+
 
 AnimalsInZoo::AnimalsInZoo(int numAnimals, Animal animal) {
 	typeAnimal = animal;
