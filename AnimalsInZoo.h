@@ -5,15 +5,17 @@ using namespace std;
 
 class AnimalsInZoo {
 	public:
-		AnimalsInZoo(int numAnimals, Animal animal);
-
-	
-		AnimalsInZoo() : numAnimals(0), animal("", 0) {};
-		bool checkAnimal();
-		void setAnimal();
-		bool displayZoo();
+		AnimalsInZoo();
+		//AnimalsInZoo(unsigned int count, unsigned int capacity, Animal *aarr);
+		//AnimalsInZoo() : numAnimals(0), capacity(1), aarr(nullptr) {}
+		bool store(Animal &another_animal);
+		void readSizes(unsigned int &count, unsigned int &capacity);
+	        bool remove(const string& animal_name);
+		Animal find(const string& animal_name);
+		
 	private:
-		int numAnimals;
-		Animal animal;
+		unsigned int numAnimals;
+		unsigned int capacity;
+		Animal *aarr = nullptr;
 };
 	

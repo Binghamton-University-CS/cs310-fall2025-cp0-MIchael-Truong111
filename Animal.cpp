@@ -4,13 +4,23 @@
 
 using namespace std;
 
-Animal::Animal(string speciesName, unsigned int discoveryYear) {
-	species = speciesName;
-	year_discovered = discoveryYear;
-}	
 
-void Animal::display() {
-	cout << species << " [" << year_discovered << "]" << endl;
+Animal::Animal(string speciesName, float anWeight, bool dangrousness) {
+	species = speciesName;
+	weight = anWeight;
+	danger = dangrousness;
 }
-   
+string Animal::displayName() {
+	return species;
+}
+bool Animal::displayDanger() {
+	return danger;
+
+}
+float Animal::displayWeight() {
+	return weight;
+}
+  
+
+
    

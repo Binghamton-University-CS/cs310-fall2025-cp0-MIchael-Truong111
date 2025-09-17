@@ -9,14 +9,17 @@ using namespace std;
 class Animal {
    public:
 
-	Animal(string speciesName, unsigned int discoveryYear);
-	Animal() : species(""), year_discovered(0) {};	
-	void display(); 
+	Animal(string species, float weight, bool dangrous);
+	Animal() : species(" "), weight(0), danger(false) {};	
+	string displayName();
+	float displayWeight();
+	bool displayDanger();
 
 
    private:
-      string species = "";
-      unsigned int year_discovered = 0;
+      string species;
+      float weight;
+      bool danger;
 };
 
 #endif
